@@ -1,6 +1,6 @@
 $(document).ready(function (){
 
-  $("#phone").mask("+7 (999) 999-9999");
+
 
   var $counter = document.querySelector(".routes__pagenation_num span:first-of-type")
   var $lenght = document.querySelector(".routes__pagenation_num span:last-of-type")
@@ -55,6 +55,12 @@ $(document).ready(function (){
 
     }
   }
+
+    $(document).ready(function () {
+
+        $("#phone").mask("+7 (999) 999-9999");
+        return false
+    });
 
   function scrollInit(){
     if($(window).width() > 700) {
@@ -200,7 +206,7 @@ $(document).ready(function (){
 
   ScrollReveal().reveal('.swiper-slide-active .index_slider__text', { delay: 500 });
 
-
+    ScrollReveal().reveal('.programs__item', { delay: 500 });
 
 
 
