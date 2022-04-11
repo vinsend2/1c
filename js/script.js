@@ -1,5 +1,7 @@
 $(document).ready(function (){
 
+  $("#phone").mask("+7 (999) 999-9999");
+
   var $counter = document.querySelector(".routes__pagenation_num span:first-of-type")
   var $lenght = document.querySelector(".routes__pagenation_num span:last-of-type")
 
