@@ -172,16 +172,26 @@
       font-weight: 500;
       font-size: 19px;
       display: block;
+      position: relative;
       /* or 132% */
       border-top: 1px solid #EDEFF2;
       padding: 0;
       letter-spacing: -0.015em;
       cursor: pointer;
-
+      transition: 0.3s all linear;
       color: #424B63;
+      svg {
+        position: absolute;
+        right: 15px;
+        top: 26px;
+        transition: 0.3s all linear;
+      }
       &.active > div {
         color: #3B5993;
         background: #E8EFFC;
+      }
+      &.active > svg {
+        transform: rotate(180deg)
       }
       > div {
         padding: 20px;

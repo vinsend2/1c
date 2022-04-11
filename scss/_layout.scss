@@ -67,6 +67,10 @@ h1, h2, h3, h4, h5, h6,
   margin-right: 0 !important;
 }
 
+.mCSB_scrollTools {
+  z-index: 30000 !important;
+}
+
 h1, .h1 {
   font-family: 'Alumni Sans';
   font-style: normal;

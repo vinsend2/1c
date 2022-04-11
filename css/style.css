@@ -352,16 +352,27 @@
   font-weight: 500;
   font-size: 19px;
   display: block;
+  position: relative;
   /* or 132% */
   border-top: 1px solid #EDEFF2;
   padding: 0;
   letter-spacing: -0.015em;
   cursor: pointer;
+  transition: 0.3s all linear;
   color: #424B63;
+}
+.header .second-menu > li svg {
+  position: absolute;
+  right: 15px;
+  top: 26px;
+  transition: 0.3s all linear;
 }
 .header .second-menu > li.active > div {
   color: #3B5993;
   background: #E8EFFC;
+}
+.header .second-menu > li.active > svg {
+  transform: rotate(180deg);
 }
 .header .second-menu > li > div {
   padding: 20px;
@@ -2360,6 +2371,10 @@ h1, h2, h3, h4, h5, h6,
 
 .mCSB_inside > .mCSB_container {
   margin-right: 0 !important;
+}
+
+.mCSB_scrollTools {
+  z-index: 30000 !important;
 }
 
 h1, .h1 {
