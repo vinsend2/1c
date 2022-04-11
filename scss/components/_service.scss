@@ -1,0 +1,205 @@
+.service-item {
+  .service__list li:nth-of-type(odd) {
+    background-position: left top;
+  }
+  .service__list li .title {
+    padding: 0 0 15px 0;
+  }
+  .service__list li:before {
+    top: 120px;
+  }
+  .index_slider__order {
+    position: absolute;
+    bottom: 0;
+  }
+  .service__content-block {
+    min-height: 288px;
+    position: relative;
+  }
+  .price-block {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    border-top: 1px solid #D5DCE6;
+    margin-top: 10px;
+    padding-top: 5px;
+    .price {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 30px;
+      letter-spacing: -0.015em;
+      color: #E40D41;
+    }
+  }
+  .service__text-block {
+    margin: 40px 0;
+  }
+}
+.service.inner_pages {
+  background: url(../images/inner-bg.jpg) center top no-repeat;
+  .h1:before {
+    width: 1000%;
+  }
+  .h1:after{
+    width: 1000%;
+  }
+  .service__list {
+    position: relative;
+    z-index: 5;
+    &:after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 1300px;
+      background: #F8F9FA;
+      top: -30px;
+      z-index: -1;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    li {
+      .text {
+        padding-right: 30px;
+      }
+    }
+  }
+}
+.service {
+  .h1 {
+    &:before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background: rgba(213, 220, 230, 1);
+      top: 50%;
+      left: calc(100% + 20px);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background: rgba(213, 220, 230, 1);
+      top: 50%;
+      right: calc(100% + 20px);
+    }
+  }
+
+  &__list {
+    li {
+      background-repeat: no-repeat;
+      min-height: 288px;
+      padding: 0 15px;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 47px;
+        height: 47px;
+        background: #F8F9FA;
+        transform: rotate(45deg);
+        top: calc(50% - 30px);
+        right: calc(50% - 32px);
+
+      }
+      &:nth-of-type(odd) {
+        background-position: left center;
+        .service__content-block {
+          margin-left: calc(50% + 30px);
+        }
+      }
+      &:nth-of-type(even) {
+        background-position: calc(100% + 17px) center;
+      }
+      .title {
+        font-family: 'Alumni Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 24px;
+        /* identical to box height, or 80% */
+
+        letter-spacing: -0.015em;
+        padding: 25px 0 25px 0;
+        color: #000000;
+      }
+      .text {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+
+        letter-spacing: -0.015em;
+
+        color: #46536A;
+      }
+    }
+  }
+  &__content-block {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .service-item.inner_pages {
+    margin-bottom: 50px;
+    .service__item {
+      background-size: contain;
+      height: auto;
+      .price-block {
+        border: none;
+      }
+      .index_slider__order {
+        position: relative;
+        width: 100%;
+      }
+    }
+
+  }
+  .service.inner_pages {
+    .service__list {
+      margin-top: 50px;
+    }
+  }
+  .service {
+    margin-bottom: 310px;
+    .h1 {
+      margin: 0;
+    }
+    .service__item {
+      height: 150px;
+
+      background-size: cover;
+      min-height: auto;
+      &:before {
+        content: none;
+      }
+      &:first-of-type {
+        .service__content-block {
+          margin-top: 0;
+        }
+      }
+    }
+    .service__list li:nth-of-type(even) {
+      background-position: initial;
+    }
+    .service__list li:nth-of-type(odd) .service__content-block {
+      margin-left: 0;
+    }
+    .service__content-block {
+      padding-top: 140px;
+      margin-top: 338px;
+      width: auto;
+    .text {
+      line-height: 18px;
+    }
+    }
+  }
+  .btn {
+    width: 100%;
+  }
+}

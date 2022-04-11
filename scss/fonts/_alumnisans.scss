@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'Alumni Sans';
+  src: url('../fonts/alumniSans/AlumniSans-Regular.eot');
+  src: local('AlumniSans Regular'), local('Alumni Sans-Regular'),
+  url('../fonts/alumniSans/AlumniSans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/alumniSans/AlumniSans-Regular.woff2') format('woff2'),
+  url('../fonts/alumniSans/AlumniSans-Regular.woff') format('woff'),
+  url('../fonts/alumniSans/AlumniSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'alumniSans';
+  src: url('../fonts/alumniSans/alumniSans-Semibold.eot');
+  src: local('alumniSans Semibold'), local('alumniSans-Semibold'),
+  url('../fonts/alumniSans/alumniSans-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/alumniSans/alumniSans-Semibold.woff2') format('woff2'),
+  url('../fonts/alumniSans/alumniSans-Semibold.woff') format('woff'),
+  url('../fonts/alumniSans/alumniSans-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'alumniSans';
+  src: url('../fonts/alumniSans/alumniSans-Medium.eot');
+  src: local('alumniSans Medium'), local('alumniSans-Medium'),
+  url('../fonts/alumniSans/alumniSans-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/alumniSans/alumniSans-Medium.woff2') format('woff2'),
+  url('../fonts/alumniSans/alumniSans-Medium.woff') format('woff'),
+  url('../fonts/alumniSans/alumniSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+

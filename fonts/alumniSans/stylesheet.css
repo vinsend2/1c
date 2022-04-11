@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Alumni Sans';
+    src: url('AlumniSans-Medium.woff2') format('woff2'),
+        url('AlumniSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alumni Sans';
+    src: url('AlumniSans-Regular.woff2') format('woff2'),
+        url('AlumniSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Alumni Sans';
+    src: url('AlumniSans-SemiBold.woff2') format('woff2'),
+        url('AlumniSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,148 @@
+.order {
+  min-height: 433px;
+  background: url(../images/order/order-bg.jpg) no-repeat center center;
+
+  margin-bottom: 70px;
+  input[type=text], input[type=tel] {
+    font-family: 'Alumni Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    width: 385px;
+    height: 54px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    background: #252D39;
+    border: 1px solid #787C88;
+    box-sizing: border-box;
+    border-radius: 19px;
+    padding-left: 20px;
+  }
+  &__container {
+    height: 433px;
+  }
+  .wrapper {
+    overflow: visible;
+  }
+  &__form-block {
+    background: rgba(41, 44, 51, 0.94);
+    display: inline-flex;
+    height: calc(100% + 20px);
+    padding: 50px 140px 50px 120px;
+    transform: skewX(25deg);
+    position: relative;
+    top: -10px;
+    margin-left: 50%;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 150px;
+      width: 10px;
+      background: white;
+      z-index: -2;
+      left: 15px;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      height: 150px;
+      width: 10px;
+      background: white;
+      z-index: -2;
+      left: -40px;
+      bottom: 10px;
+    }
+    .wrapper:before {
+      content: "";
+      position: absolute;
+      height: calc(100% - 20px);
+      width: 20px;
+      background: #F07F00;
+      z-index: -2;
+      left: -20px;
+      bottom: 10px;
+    }
+    .title {
+      font-style: normal;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 70px;
+      line-height: 90px;
+      color: white;
+      span {
+      color: #F07F00;
+      }
+    }
+    .order-form {
+      transform: skewX(-25deg);
+    }
+    .btn-black-transparent {
+      box-shadow: 0px 4px 15px rgba(215, 126, 26, 0.49);
+    }
+    .politics {
+      font-family: 'Alumni Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 14px;
+      color: #6B7078;
+      input[type=checkbox] {
+        display: none;
+      }
+      input[type=checkbox] + label {
+        display: block;
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+      }
+      input[type=checkbox] + label:before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: 3px solid #636970;
+        position: absolute;
+        left: 10px;
+        top: -1px;
+        opacity: 0.6;
+        border-radius: 50%;
+        background: transparent;
+        -webkit-transition: all 0.12s, border-color 0.08s;
+        transition: all 0.12s, border-color 0.08s;
+
+      }
+      input[type=checkbox]:checked + label:before {
+        background: orange;
+      }
+      span {
+        color: #F07F00;
+        text-decoration: underline;
+        opacity: 0.7;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    background: #F3F4F7;
+    .wrapper {
+      margin-left: -120%;
+    }
+    .order__form-block .politics input[type=checkbox] + label {
+      max-width: 60%;
+    }
+    input[type=text], input[type=tel] {
+      width: calc(100% - 40px);
+    }
+    .order__form-block .title {
+      max-width: 50%;
+      display: block;
+      line-height: 55px;
+      position: relative;
+      left: 124px;
+      top: -14px;
+    }
+    .order__form-block {
+      margin-left: 40%;
+    }
+  }
+}

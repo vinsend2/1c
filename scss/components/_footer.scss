@@ -1,0 +1,119 @@
+.footer {
+  &__top-block {
+    background: rgba(59, 65, 86, 0.9);
+    .footer__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+  }
+  ul {
+    display: flex;
+    padding: 0;
+    li {
+      padding: 15px;
+      color: white;
+      &:first-of-type {
+        padding-left: 0;
+      }
+      &:hover {
+        color: #66C1FF;
+      }
+    }
+  }
+  .social-list {
+    width: 107px;
+    margin: 0;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      background: rgba(118, 126, 149, 0.7);
+      left: -50%;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 1px;
+      background: rgba(118, 126, 149, 0.7);
+      right: -50%;
+    }
+    li {
+      background: none;
+      width: 20px;
+      &:hover {
+        svg {
+          path {
+            fill: #66C1FF;
+          }
+        }
+      }
+    }
+  }
+  .header__tel-block {
+    transform: none;
+    padding: 0;
+    &:before {
+      content: none;
+    }
+    .tel-block__tel {
+      span {
+        color: #66C1FF;
+      }
+    }
+  }
+  &__bottom-block {
+    background: url(../images/footer_bg.jpg) center center no-repeat;
+    min-height: 260px;
+    .stats {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 8px;
+      letter-spacing: -0.015em;
+      color: #404D7A;
+    }
+    .stats-block {
+      padding-top: 15px;
+    }
+  }
+  .luxar-logo {
+    position: absolute;
+    right: 0;
+    bottom: -30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+ .footer {
+   .footer__container {
+     padding: 10px 0;
+     justify-content: space-around;
+   }
+   .footer__bottom-block {
+     .footer__container {
+       padding: 0 10px;
+     }
+   }
+    .social-list:after {
+      right: -25%;
+    }
+   .main-menu {
+     display: none;
+   }
+   .tel-block__tel {
+     font-size: 22px;
+   }
+   .header {
+     &__menu-block, &__tel-block, &__logo, &__social-block, &__search {
+       display: block;
+     }
+   }
+
+ }
+
+}

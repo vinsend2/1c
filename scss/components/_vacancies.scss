@@ -1,0 +1,40 @@
+.vacancies {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+  min-height: 500px;
+  background: url(../images/vacancies/chel.png) no-repeat 50% top , url(../images/vacancies/kran.png) no-repeat right top;
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  &__list {
+    .item {
+      list-style: initial;
+      font-size: 16px;
+      &::marker {
+        color: #D77E1A;
+      }
+      .submenu {
+        display: none;
+        font-weight: 300;
+        ul {
+          padding: 15px;
+        }
+      }
+      > span {
+        line-height: 30px;
+        font-weight: 500;
+        cursor: pointer;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    background: none;
+    &__container {
+      padding: 0 10px;
+    }
+  }
+}

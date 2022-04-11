@@ -1,0 +1,96 @@
+.projects {
+  margin: 100px 0;
+  h3 {
+    font-family: 'Alumni Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 40px;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    &:first-letter {
+      color: #F17F00;
+    }
+  }
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 0;
+    margin-top: 50px;
+
+    .projects-item {
+      cursor: pointer;
+
+      &__content {
+        font-family: "Alumni Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 20px;
+        color: #9EA4AC;
+        padding: 20px;
+        p {
+          margin: 0;
+        }
+        span {
+          color: black;
+          font-weight: 600;
+        }
+      }
+
+      .btn {
+        margin: 25px;
+      }
+      .btn-black-transparent {
+        color: #404A59;
+        border: 1px solid #BDCADC;
+        box-sizing: border-box;
+        border-radius: 14px;
+        width: 158px;
+        padding: 20px 37px;
+        min-width: auto;
+        background: transparent;
+        div {
+          left: 100px;
+          transition: all 0s ease-out;
+          height: 52px;
+
+        }
+      }
+      &:hover {
+        box-shadow: 0px 4px 25px rgba(148, 162, 196, 0.25);
+        transform: scale(1.02);
+        transition: all 0.3s ease-out;
+        .btn-black-transparent {
+          box-shadow: 0px 4px 10px rgb(215 126 26 / 49%);
+          min-width: 218px;
+          background: linear-gradient(to right, #292C33 90%, #D77E1A 10%);
+          color: #fff;
+          padding: 0 20px;
+          padding-left: 45px;
+          border: none;
+          div {
+            left: 16px;
+            transition: all 0.3s ease-out;
+          }
+        }
+      }
+    }
+  }
+
+  .ajax_load_btn {
+     margin-top: 20px;
+  }
+  @media screen and (max-width: 1024px) {
+    .projects-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .projects-item__image {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+}

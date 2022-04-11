@@ -1,0 +1,123 @@
+.price {
+  background: url(../images/price/kran.png) no-repeat right top;
+  /* overflow: visible; */
+  background-size: contain;
+  margin-bottom: 100px;
+  form {
+    .title {
+      font-family: 'Alumni Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 90px;
+      color: #3a3a3a;
+      text-transform: uppercase;
+      display: block;
+      &:first-letter {
+        color: #D77E1A;
+      }
+    }
+    input, select, textarea {
+      background: transparent;
+      border-radius: 15px;
+      padding: 0 15px;
+      line-height: 55px;
+      height: 55px;
+      font-size: 20px;
+      width: 50%;
+      border: 1px solid #d3d3d3;
+    }
+    input#date {
+      background: url(../images/icons/calendar.svg) no-repeat 25px;
+      padding-left: 50px;
+      &::placeholder {
+        color: #D77E1A;
+      }
+    }
+    .politics {
+      font-family: 'Alumni Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 14px;
+      color: #6B7078;
+      input[type=checkbox] {
+        display: none;
+      }
+      input[type=checkbox] + label {
+        display: block;
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+      }
+      input[type=checkbox] + label:before {
+        content: "";
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: 3px solid #636970;
+        position: absolute;
+        left: 10px;
+        top: -1px;
+        opacity: 0.6;
+        border-radius: 50%;
+        background: transparent;
+        -webkit-transition: all 0.12s, border-color 0.08s;
+        transition: all 0.12s, border-color 0.08s;
+
+      }
+      input[type=checkbox]:checked + label:before {
+        background: orange;
+      }
+      span {
+        color: #F07F00;
+        text-decoration: underline;
+        opacity: 0.7;
+      }
+    }
+    select {
+      appearance: none;
+      overflow: hidden;
+      background: url(../images/icons/select-arrow.svg) no-repeat 25px;
+      padding-left: 50px;
+      color: #D77E1A;
+    }
+    > p {
+      display: flex;
+      flex-direction: column;
+      &:nth-of-type(9) {
+        span:nth-of-type(2) {
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          span {
+            padding-left: 10px;
+            color: #D77E1A;
+          }
+        }
+
+      }
+      > label {
+        display: flex;
+        flex-direction: column;
+        color: rgba(80, 87, 96, 1);
+        font-style: normal;
+        /* font-weight: 500; */
+        font-size: 18px;
+        padding-left: 15px;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 0 10px;
+    background: none;
+    form {
+      .title {
+        line-height: 36px;
+      }
+      input, select, textarea {
+        width: 100%;
+      }
+    }
+  }
+}

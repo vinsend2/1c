@@ -1,0 +1,37 @@
+.modal {
+  display: none;
+  width: 665px;
+  background: url(../images/programs/bg2.png) top right no-repeat !important;
+  background-size: cover !important;
+  .title {
+
+    font-family: "Alumni Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 15px;
+    letter-spacing: -0.015em;
+    color: #3B5993;
+    position: relative;
+  }
+  .contacts__order {
+    width: auto;
+  }
+  .politics {
+
+    color: #94A9C6;
+  }
+  .politics input[type=checkbox] + label:before {
+    background: rgba(255, 255, 255, 0.271);
+  }
+  input[type=text], input[type=tel], input[type=password], select, textarea {
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid #FFFFFF;
+  }
+  .btn {
+    margin-top: 25px;
+  }
+}

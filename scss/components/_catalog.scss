@@ -1,0 +1,327 @@
+.catalog {
+  padding-top: 300px;
+  background: url(../images/catalog/Kran.png) 35% 45px no-repeat, url(../images/catalog/sky.png) no-repeat 90px 50px;
+  margin-bottom: 70px;
+  &__tabs {
+    display: flex;
+    flex-direction: column;
+    .tab.active {
+      label {
+        color: white;
+      }
+    }
+  }
+  &__more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ajax_load_btn {
+      font-family: 'Alumni Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      color: black;
+      display: flex;
+      align-items: center;
+      width: 125px;
+      justify-content: space-evenly;
+      cursor: pointer;
+      position:  relative;
+      &:before, &:after  {
+        content: "";
+        bottom: 50%;
+        width: 192px;
+        position: absolute;
+        background: linear-gradient(to left,rgba(156, 161, 172, 1), rgba(0, 0, 0, 0));
+        height: 100%;
+        /* transform: translateX(-50%); */
+        background-size: cover;
+        height: 1px;
+        left: -192px;
+      }
+      &:after {
+        transform: rotate(180deg);
+        left: 124px;
+      }
+      span {
+        color: #D77E1A;
+      }
+      svg {
+        transition: all 0.3s ease-in-out;
+      }
+      &:hover {
+        svg {
+          transition: all 0.3s ease-in-out;
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+  & input[type="radio"] {
+    display: none;
+  }
+  & .catalog__content {
+
+    display: none;
+    transition: all 0.3s ease-in-out;
+  }
+  .catalog__content.active {
+
+    display: block;
+  }
+  #tab-btn-1:checked~#content-1,
+  #tab-btn-2:checked~#content-2 {
+    display: block;
+  }
+  & label {
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 90px;
+    color: #D77E1A;
+  }
+  .catalog__tabs-header {
+    background: rgba(17, 21, 28, 0.9);
+    display: flex;
+    padding: 5px 25px 15px 25px;
+    position: relative;
+    &:after {
+      content: "";
+      bottom: 0;
+      width: 74px;
+      left: 50%;
+      position: absolute;
+      background: url(../images/catalog/tabs-before.svg) left top no-repeat;
+      height: 100%;
+      transform: translateX(-50%);
+      background-size: cover;
+    }
+  }
+  .catalog__tabs-header>input[type="radio"]:checked+div>label {
+    color: white;
+  }
+  .tab__link {
+    font-family: Alumni Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 0px;
+    color: #7A8593;
+    &:nth-of-type(2) {
+      margin: 0 10px;
+      &:before {
+        content: "/";
+        bottom: 0;
+        width: 100%;
+        left: -7px;
+        position: relative;
+      }
+      &:after {
+        content: "/";
+        bottom: 0;
+        width: 100%;
+        left: 7px;
+        position: relative;
+      }
+    }
+  }
+  .tab--autocran {
+    margin-left: 50%;
+    transform: translateX(-370px);
+    &:after {
+      content: "";
+      bottom: 0;
+      width: 438px;
+      left: 240px;
+      position: absolute;
+      background: url(../images/catalog/autocran.png) left top no-repeat;
+      height: 265px;
+    }
+  }
+  .tab__link.active {
+    color: #D77E1A;
+  }
+  .catalog-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 0;
+    margin-top: 50px;
+  }
+  .catalog-item {
+    cursor: pointer;
+    .catalog-item__image {
+      img {
+        max-width: 100%;
+      }
+    }
+    .btn {
+      margin: 25px;
+    }
+    .btn-black-transparent {
+      color: #404A59;
+      border: 1px solid #BDCADC;
+      box-sizing: border-box;
+      border-radius: 14px;
+      width: 158px;
+      padding: 20px 37px;
+      min-width: auto;
+      background: transparent;
+      div {
+        left: 100px;
+        transition: all 0s ease-out;
+        height: 52px;
+
+      }
+    }
+    &:hover {
+      box-shadow: 0px 4px 25px rgba(148, 162, 196, 0.25);
+      transform: scale(1.02);
+      transition: all 0.3s ease-out;
+      .btn-black-transparent {
+        box-shadow: 0px 4px 10px rgb(215 126 26 / 49%);
+        min-width: 218px;
+        background: linear-gradient(to right, #292C33 90%, #D77E1A 10%);
+        color: #fff;
+        padding: 0 20px;
+        padding-left: 45px;
+        border: none;
+        div {
+          left: 16px;
+          transition: all 0.3s ease-out;
+        }
+      }
+    }
+  }
+  .catalog-item__title {
+    padding: 10px 25px;
+    padding-bottom: 0;
+    p {
+      margin: 0;
+    }
+    .subname {
+      font-family: 'Alumni Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      color: #9EA4AC;
+    }
+    .name {
+      font-family: 'Alumni Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      color: #000000;
+    }
+  }
+  .catalog-item__props {
+    padding: 10px 25px;
+    li {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      border-bottom: 1px dotted #e1e5e8;
+      position: relative;
+      p {
+        margin: 0;
+        color: #5E6772;
+        font-family: 'Alumni Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: #5E6772;
+        transform: translateY(10px);
+
+      }
+      span {
+        font-family: "Alumni Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #3F4449;
+        text-align: end;
+        transform: translateY(8px);
+        background: #F3F4F7;
+        width: max-content;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+  @media screen and (min-width: 1299px) and (max-width: 1500px) {
+    .tab label {
+      font-size: 60px;
+    }
+    .tab--autocran {
+      transform: translateX(-260px);
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    padding-top: 0;
+    background: none;
+    .catalog__tabs-header {
+      display: flex;
+      padding: 0;
+      position: relative;
+      flex-wrap: wrap;
+    }
+    &__tavs {
+      display: flex;
+      flex-direction: column;
+    }
+    .tab {
+      padding: 20px;
+      width: 100%;
+      &:after {
+        content: none;
+      }
+      label {
+        line-height: 48px;
+        font-size: 48px;
+      }
+    }
+    .tab--bashcran {
+      border-bottom: 3px solid white;
+    }
+    .tab--autocran {
+      margin: 0;
+      transform: none;
+    }
+    .catalog__tabs-header:after {
+      transform: none;
+      right: 0;
+      top: 20%;
+      left: auto;
+      background-size: auto;
+    }
+    .catalog-item__image {
+      display: flex;
+      justify-content: center;
+    }
+    .catalog-list {
+      grid-template-columns: repeat(1, 1fr);
+      margin-top: 5px;
+    }
+    .catalog__more .ajax_load_btn:before, .catalog__more .ajax_load_btn:after {
+      width: 80%;
+      left: -80%;
+    }
+    .catalog__more .ajax_load_btn:after {
+      left: 100%;
+    }
+  }
+
+}
+
+
+
+
+

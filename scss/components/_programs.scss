@@ -1,0 +1,407 @@
+.programs.programs-item.inner_pages {
+  margin-bottom: 0;
+}
+
+.programs.programs-item {
+  .item__top-block {
+    background: rgba(255, 255, 255, 0.7);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 30px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    .content {
+      .title {
+        font-family: 'Alumni Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 25px;
+        /* or 56% */
+        margin-bottom: 40px;
+        letter-spacing: -0.015em;
+        text-transform: uppercase;
+
+        color: #3B5993;
+
+      }
+    }
+    .item__img-block {
+      margin: 0px 75px 0 65px
+    }
+    .right-block {
+      margin-left: 200px;
+      margin-top: -15px;
+      .index_slider__order:first-of-type {
+        margin-top: 35px;
+      }
+      .index_slider__order:last-of-type {
+        margin-top: 20px;
+      }
+      .price-block {
+        display: flex;
+        /* flex-direction: column; */
+        /* margin-top: 10px; */
+        /* padding-top: 5px; */
+        align-items: flex-end;
+        width: 100%;
+        justify-content: space-between;
+        > div {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .price {
+          font-family: 'Gilroy';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 32px;
+          line-height: 30px;
+          letter-spacing: -0.015em;
+          color: #E40D41;
+        }
+      }
+    }
+  }
+  .item__content-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -25px;
+    li {
+      background: #FFFFFF;
+      border: 1px solid #E5E7EF;
+      box-sizing: border-box;
+      border-radius: 17px;
+      /* height: 50px; */
+      min-width: 210px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      &:hover {
+        transform: translateY(-15px);
+      }
+    }
+    li.active {
+      a {
+        color: #FFFFFF;
+      }
+      background: linear-gradient(87.71deg, #0A46C0 29.4%, #0C67E4 97.95%);
+      background-color: #0C67E4;
+      transform: translateY(-15px);
+      &:before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: linear-gradient(136deg, #0b4ec8 29.4%, #0C67E4 88.95%);
+        transform: rotate(45deg);
+        bottom: -10px;
+        z-index: -10;
+        left: 93px;
+
+
+      }
+    }
+
+    li a {
+      font-family: 'Alumni Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 25px;
+      display: block;
+      line-height: 50px;
+      /* identical to box height, or 88% */
+
+
+      color: #3B5993;
+    }
+  }
+  .item__content {
+    padding: 30px;
+    h3 {
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 20px;
+      /* or 100% */
+
+      color: #556683;
+    }
+    li {
+      list-style: inherit;
+      margin-left: 40px;
+      line-height: 30px;
+      &::marker {
+        color: #0990FF;
+      }
+    }
+  }
+  .item__content div {
+    display: none;
+  }
+  .item__content .active {
+    display: block;
+  }
+}
+
+.programs.inner_pages {
+  margin-top: 0;
+  margin-bottom: 500px;
+  .programs__list {
+    position: relative;
+  }
+  .programs__item {
+
+    &:nth-of-type(2) {
+      .inner-menu {
+        &:after {
+
+          left: 475px;
+
+        }
+      }
+    }
+    &:nth-of-type(3) {
+      .inner-menu {
+        &:after {
+
+          left: 810px;
+
+        }
+      }
+    }
+    &:nth-of-type(4) {
+      .inner-menu {
+        &:after {
+
+          left: 1135px;
+
+        }
+      }
+    }
+    &:hover {
+      .inner-menu {
+        display: block;
+      }
+    }
+  }
+
+  ul li.active {
+    box-shadow: 0px 4px 13px rgb(37 51 77 / 22%);
+
+    margin-top: -25px;
+    .text {
+      background: linear-gradient(87.71deg, #0A46C0 29.4%, #0C67E4 97.95%);
+
+      color: white;
+    }
+    .inner-menu {
+      display: block;
+    }
+  }
+  .inner-menu {
+    position: absolute;
+    display: none;
+
+    background: #FFFFFF;
+    border: 1px solid #E2E5ED;
+    box-sizing: border-box;
+    border-radius: 30px;
+    width: 1300px;
+    bottom: calc(-100% - 15px);
+    left: 0;
+    padding: 30px;
+    min-height: 300px;
+    &:after {
+      content: "";
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      background: #FFFFFF;
+      transform: rotate(45deg);
+      top: -13px;
+      left: 135px;
+      z-index: 0;
+      border: 1px solid #E2E5ED;
+      border-bottom: 0;
+      border-right: 0;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100px;
+      width: 100%;
+      left: 0;
+      top: - 100px
+    }
+    li {
+      font-family: 'Alumni Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 40px;
+      /* or 143% */
+
+      color: #000000;
+      &:hover {
+
+          color: #3B5993;
+
+      }
+    }
+  }
+
+}
+
+.programs {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  background: url(../images/programs/bg2.png) bottom center no-repeat;
+
+  .h1 {
+    &:before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background: rgba(213, 220, 230, 1);
+      top: 50%;
+      left: calc(100% + 20px);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background: rgba(213, 220, 230, 1);
+      top: 50%;
+      right: calc(100% + 20px);
+    }
+  }
+  .programs__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+
+    margin-bottom: 30px;
+  }
+  .programs__item{
+    background: white;
+    height: 300px;
+    width: 310px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 4px 13px rgb(37 51 77 / 22%);
+      margin-top: -25px;
+      .text {
+        background: linear-gradient(87.71deg, #0A46C0 29.4%, #0C67E4 97.95%);
+
+        color: white;
+      }
+    }
+    .text {
+      font-family: 'Alumni Sans';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 25px;
+      /* or 78% */
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: -0.015em;
+      padding: 30px 0;
+      color: #3553A4;
+      width: 100%;
+    }
+  }
+  .catalog__more {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Gilroy';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 38px;
+      letter-spacing: -0.015em;
+      color: #3B5993;
+      svg {
+        transform: translateY(-5px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .programs-item.inner_pages {
+    .item__content-menu {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+    .item__content-menu li.active {
+      margin-top: 0;
+      transform: none;
+    }
+    .item__content-menu li {
+      min-width: auto;
+      a {
+        padding: 0 10px;
+      }
+    }
+    .item__content li {
+      margin-left: 0;
+    }
+   .item__top-block {
+     flex-wrap: wrap;
+
+      .item__img-block {
+        margin: 0;
+      }
+     .right-block {
+       margin: 30px 0;
+       .price-block {
+         align-items: flex-end;
+         width: 100%;
+         justify-content: space-between;
+       }
+       .btn {
+         width: 300px;
+       }
+     }
+   }
+  }
+
+
+  .programs.inner_pages {
+    margin-bottom: 50px;
+    .programs__list {
+      justify-content: center;
+      flex-wrap: wrap;
+      .programs__item {
+        margin: 30px;
+      }
+    }
+  }
+  .programs {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    .swiper-slide {
+      width: 85%;
+    }
+  }
+
+}
