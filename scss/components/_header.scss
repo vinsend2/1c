@@ -95,6 +95,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      transition: 0.3s all linear;
+      &:hover {
+        background: #B0D1F5;
+      }
       a {
         font-size: 0;
       }

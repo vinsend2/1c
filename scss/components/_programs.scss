@@ -193,7 +193,7 @@
   ul li.active {
     box-shadow: 0px 4px 13px rgb(37 51 77 / 22%);
 
-    margin-top: -25px;
+
     .text {
       background: linear-gradient(87.71deg, #0A46C0 29.4%, #0C67E4 97.95%);
 
@@ -347,6 +347,9 @@
 }
 
 @media screen and (max-width: 1024px) {
+  .programs.inner_pages ul li.active {
+    margin-top: -25px;
+  }
   .programs-item.inner_pages {
     .item__content-menu {
       flex-wrap: wrap;

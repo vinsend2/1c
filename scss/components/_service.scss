@@ -107,12 +107,14 @@
       }
       &:nth-of-type(odd) {
         background-position: left center;
+        background-size: 50%;
         .service__content-block {
           margin-left: calc(50% + 30px);
         }
       }
       &:nth-of-type(even) {
         background-position: calc(100% + 17px) center;
+        background-size: 50%;
       }
       .title {
         font-family: 'Alumni Sans';

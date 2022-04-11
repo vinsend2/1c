@@ -71,9 +71,14 @@
       }
     }
       &-ds {
-
         border: none;
       }
+      &-no-swap {
+        &:hover {
+          color: #FFFFFF;
+          background: linear-gradient(87.71deg, #0A46C0 29.4%, #0C67E4 97.95%);
 
+        }
+      }
     }
   }
