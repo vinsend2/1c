@@ -23,6 +23,11 @@ body {
   background: #F8F9FA;
 }
 
+.normalize {
+ opacity: 1 !important;
+  transform: initial !important;
+}
+
 .wrapper {
   overflow: hidden;
 }

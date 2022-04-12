@@ -1686,6 +1686,7 @@
 }
 .service__content-block {
   width: 50%;
+  transition: 0.3s all linear;
 }
 
 @media screen and (max-width: 1024px) {
@@ -2341,6 +2342,11 @@ body {
   position: relative;
   height: 100%;
   background: #F8F9FA;
+}
+
+.normalize {
+  opacity: 1 !important;
+  transform: initial !important;
 }
 
 .wrapper {

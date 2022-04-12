@@ -98,7 +98,7 @@ $(document).ready(function (){
         if ($('.wrapper').width() != win.width()) {
           win.trigger('resize');
         }
-
+      /*  $(".programs__item").is(":mcsInSight");*/
         $('.wrapper').mCustomScrollbar({
           theme: "dark",
           scrollbarPosition: "inside",
@@ -110,11 +110,12 @@ $(document).ready(function (){
   }
 
 
+
   sliderInit();
   scrollInit();
 
 
-
+  
 
   $(document).ready(function () {
     $('.vacancies__list .item').on('click', function (e) {
@@ -204,9 +205,7 @@ $(document).ready(function (){
 
 
 
-  ScrollReveal().reveal('.swiper-slide-active .index_slider__text', { delay: 500 });
 
-    ScrollReveal().reveal('.programs__item', { delay: 500 });
 
 
 
@@ -228,7 +227,7 @@ $(document).ready(function (){
 
 
 
-  console.log(1233);
+
 
 
   if ($('.catalog-item').length) {
